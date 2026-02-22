@@ -60,13 +60,13 @@ public class PlayerController : MonoBehaviour
     // ----- GROUND CHECK -----
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.name == "Ground")
             isGrounded = true;
     }
 
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.name == "Ground")
             isGrounded = false;
     }
 }
