@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
             move = -1f;
 
-        Vector3 forwardMove = transform.forward * move * moveSpeed;
+        Vector3 forwardMove = transform.right * move * moveSpeed;
 
         // keep current Y velocity (gravity)
         rb.linearVelocity = new Vector3(
