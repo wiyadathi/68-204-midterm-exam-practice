@@ -161,7 +161,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -253,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 189469576}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4096894, y: 1, z: 0.48017}
+  m_LocalPosition: {x: -3.020001, y: 1, z: 0.48017}
   m_LocalScale: {x: 1, y: 2, z: 5.0567}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -384,6 +384,8 @@ GameObject:
   - component: {fileID: 778856761}
   - component: {fileID: 778856760}
   - component: {fileID: 778856759}
+  - component: {fileID: 778856765}
+  - component: {fileID: 778856764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -505,7 +507,7 @@ Transform:
   m_GameObject: {fileID: 778856758}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.21, z: 0}
+  m_LocalPosition: {x: -9.27, y: 0.60414, z: 1.25}
   m_LocalScale: {x: 1.5, y: 1.20828, z: 1.93869}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -514,6 +516,38 @@ Transform:
   - {fileID: 1212505826}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &778856764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778856758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eaa359446a39af4997b5a6df3bcf965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRaycastRotate
+  rb: {fileID: 0}
+  wallRB: {fileID: 0}
+  wallGO: {fileID: 189469576}
+  force: 3
+  rayDistance: 3
+--- !u!114 &778856765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778856758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa08a5180097dc469673b55fe9e96d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 5
+  rotateSpeed: 120
+  jumpForce: 6
 --- !u!1 &1135838064
 GameObject:
   m_ObjectHideFlags: 0
