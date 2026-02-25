@@ -8,7 +8,7 @@ public class BoxPushUp : MonoBehaviour
 
     [SerializeField] float force;
     [SerializeField] float torque;
-    [SerializeField] float rayDistance = 3.0f;
+    [SerializeField] float rayDistance = 2.0f;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class BoxPushUp : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        Debug.DrawRay(transform.position, Vector3.down * rayDistance, Color.red);
+        Debug.DrawRay(transform.position, Vector3.down * rayDistance, Color.yellow);
 
         RaycastHit hit;
 
@@ -28,7 +28,7 @@ public class BoxPushUp : MonoBehaviour
             if (hit.collider.name == "Capsule")
             {
                 Debug.Log("Hit: " + hit.collider.name);
-                Debug.DrawRay(transform.position, Vector3.down * rayDistance, Color.blue);
+                Debug.DrawRay(transform.position, Vector3.down * rayDistance, Color.red);
 
                 if (rb != null) //คำสั่งนี้ไม่มีก็ได้ ไม่หักคะแนน
                 {

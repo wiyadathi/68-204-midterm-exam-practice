@@ -397,7 +397,7 @@ Transform:
   m_GameObject: {fileID: 175042860}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.33091125, w: 0.94366187}
-  m_LocalPosition: {x: 0, y: 3.95, z: 0}
+  m_LocalPosition: {x: -1.43, y: 3.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -447,7 +447,7 @@ MonoBehaviour:
   rotateObj: {fileID: 1066572039}
   force: 5
   torque: 0
-  rayDistance: 3
+  rayDistance: 2
 --- !u!1 &470557944
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ ConstantForce:
   m_Enabled: 1
   m_Force: {x: 0, y: 0, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 20, z: 0}
+  m_Torque: {x: 0, y: 60, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!54 &1066572041
 Rigidbody:
@@ -806,7 +806,7 @@ Transform:
   m_GameObject: {fileID: 1066572039}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -2.48, z: 0}
+  m_LocalPosition: {x: -1.43, y: -2.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -847,8 +847,8 @@ Camera:
   m_GameObject: {fileID: 1265677682}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.9220201, g: 0.93962264, b: 0.7924742, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
