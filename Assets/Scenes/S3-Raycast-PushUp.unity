@@ -397,7 +397,7 @@ Transform:
   m_GameObject: {fileID: 175042860}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.33091125, w: 0.94366187}
-  m_LocalPosition: {x: 0, y: 2.64, z: 0}
+  m_LocalPosition: {x: 0, y: 3.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -442,6 +442,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb4da6c3d207f0408f894c0dc0095bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoxPushUp
+  rb: {fileID: 0}
+  rotateObjRB: {fileID: 0}
+  rotateObj: {fileID: 1066572039}
+  force: 5
+  torque: 0
+  rayDistance: 3
 --- !u!1 &470557944
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +688,7 @@ ConstantForce:
   m_Enabled: 1
   m_Force: {x: 0, y: 0, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 15, z: 0}
+  m_Torque: {x: 0, y: 20, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!54 &1066572041
 Rigidbody:
