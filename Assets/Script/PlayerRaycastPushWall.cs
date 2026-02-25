@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerRaycastRotate : MonoBehaviour
+public class PlayerRaycastPushWall : MonoBehaviour
 {
     [SerializeField] Rigidbody rb;
     [SerializeField] Rigidbody wallRB;
